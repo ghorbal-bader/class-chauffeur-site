@@ -1,7 +1,10 @@
-# CLASS - site public
+# Noble Ball — former GitHub Pages mirror
 
-Page statique unique. **La source de verite est le depot prive `class-chauffeur`**
-(`artifact/index.html`) : ne pas editer ici. Pour mettre a jour : rejouer `build-site.ps1`
-depuis ce depot-la, puis pousser `index.html` et `images/` ici.
+This repository only redirects to the live site, **https://noble-ball.com** (source: the private
+`class-chauffeur` repository, deployed to Cloudflare).
 
-Hebergement : GitHub Pages (branche `main`, racine). Domaine : ajouter un fichier `CNAME`.
+`index.html` and `404.html` send every visitor there (0-second meta refresh + script), carry
+`rel="canonical"` pointing at the live site and `noindex`, so search engines never index this copy.
+GitHub Pages cannot issue HTTP 301 redirects, which is why the pages do it themselves.
+
+The old standalone page and its images are in the git history (commit `bcd39f6`).
