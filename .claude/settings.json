@@ -1,0 +1,3 @@
+{
+  "enabledMcpjsonServers": ["openseo", "mcp-search-console", "geo-optimizer"]
+}
